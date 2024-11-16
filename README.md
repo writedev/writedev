@@ -1,5 +1,5 @@
 
-### I'm French  and I'm a freelance developer 🥐
+### I'm French  and I'm a freelance developer 🇫🇷 🥐
 
 ![](https://komarev.com/ghpvc/?username=writedev)
 
