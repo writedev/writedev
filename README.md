@@ -3,4 +3,4 @@
 
 ![](https://komarev.com/ghpvc/?username=writedev)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=writedev&layout=donut&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![writedev Top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=writedev&layout=donut&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
