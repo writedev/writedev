@@ -1,4 +1,4 @@
-<h1 align="left">Hi 👋! My name is writdev and I'm a freelance developer, from French 🧀🍷</h1>
+<h2 align="left">Hi 👋! My name is writdev and I'm a freelance developer, from French 🧀🍷</h2>
 
 ###
 
