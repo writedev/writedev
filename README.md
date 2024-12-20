@@ -1,6 +1,6 @@
 # 💫 About Me:
 
-### ✨My name is writdev and I'm a freelance developer, from French 🧀🥖
+### ✨My name is writdev and I'm a freelance developer, from French 🧀🗼
 
 # 💻 Tech Stack:
 
@@ -11,7 +11,7 @@
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=writedev&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=codeSTACKr&locale=en&hide_border=false" height="150" alt="stats graph"  />
 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=writedev&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=codeSTACKr&hide_border=false" height="150" alt="languages graph"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=writedev&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=codeSTACKr&hide_border=false" height="150" />
 
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=writedev&theme=dark&hide_border=false" height="150" alt="languages graph"  />
 </div>
