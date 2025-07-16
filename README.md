@@ -1,6 +1,6 @@
 # 💫 About Me:
 
-### ✨My name is writdev and I'm a freelance developer, from French 🧀🍷
+### ✨My name is **Writedev** and I'm a freelance developer, from French 🧀🍷
 
 # 💻 Tech Stack:
 
