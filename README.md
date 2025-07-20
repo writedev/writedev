@@ -2,8 +2,7 @@
 
 ### ✨My name is **Writedev** and I'm a freelance developer, from French 🧀🍷
 
-
-![](https://komarev.com/ghpvc/?username=writedev&style=flat-square)
+![](https://komarev.com/ghpvc/?username=writedev&style=for-the-badge)
 
 # 💻 Tech Stack:
 
