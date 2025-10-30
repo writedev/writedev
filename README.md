@@ -18,13 +18,14 @@
 
 <br clear="both">
 
-<!--HOUR_1-->
+<!--HOUR_1
 VERSION_A_PLACEHOLDER
-<!--HOUR_1_END-->
+HOUR_1_END-->
 
-<!--HOUR_2-->
+<!--HOUR_2
 VERSION_B_PLACEHOLDER
-<!--HOUR_2_END-->
+HOUR_2_END-->
+
 ###
 
 ---
