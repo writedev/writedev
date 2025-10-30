@@ -1,42 +1,22 @@
 import datetime
-from datetime import datetime, timezone, timedelta
 
-# Path to README
 path = "README.md"
 
-# Read the current content
 with open(path, "r", encoding="utf-8") as f:
     content = f.read()
 
-# Paris time
-paris_offset = timedelta(hours=2)  # UTC+2 (DST)
-now = datetime.now(timezone.utc) + paris_offset
-hour = now.hour
+hour = datetime.datetime.utcnow().hour
 show_a = hour % 2 == 0
-show_a = hour % 2 == 0  # Even hours -> A, Odd hours -> B
 
-def toggle_section(text, start_tag, end_tag, enable):
-    lines = text.split("\n")
-    inside = False
-    for i, line in enumerate(lines):
-        if start_tag in line:
-            inside = True
-            continue
-        if end_tag in line:
-            inside = False
-            continue
-        if inside:
-            if enable:
-                lines[i] = lines[i].replace("<!-- ", "").replace(" -->", "")
-            else:
-                if not line.strip().startswith("<!--"):
-                    lines[i] = f"<!-- {line} -->"
-    return "\n".join(lines)
+version_a = '<img src="https://raw.githubusercontent.com/writedev/writedev/output/snake.svg" alt="Snake animation" />'
+version_b = '''<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph.svg">
+  <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph.svg">
+</picture>'''
 
-# Toggle sections
-new_content = toggle_section(content, "<!--HOUR_1-->", "<!--HOUR_1_END-->", show_a)
-new_content = toggle_section(new_content, "<!--HOUR_2-->", "<!--HOUR_2_END-->", not show_a)
+content = content.replace("VERSION_A_PLACEHOLDER", version_a if show_a else "")
+content = content.replace("VERSION_B_PLACEHOLDER", version_b if not show_a else "")
 
-# Write back updated README
 with open(path, "w", encoding="utf-8") as f:
-    f.write(new_content)
+    f.write(content)
