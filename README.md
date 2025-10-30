@@ -18,18 +18,13 @@
 
 <br clear="both">
 
-<!--PART1-->
-<img src="https://raw.githubusercontent.com/writedev/writedev/output/snake.svg" alt="Snake animation" />
-<!--PART1_END-->
+<!--HOUR_1-->
+VERSION_A_PLACEHOLDER
+<!--HOUR_1_END-->
 
-<!--PART2-->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph.svg">
-  <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph.svg">
-</picture>
-<!--PART2_END-->
-
+<!--HOUR_2-->
+VERSION_B_PLACEHOLDER
+<!--HOUR_2_END-->
 ###
 
 ---
