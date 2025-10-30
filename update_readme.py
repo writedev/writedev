@@ -1,4 +1,5 @@
 import datetime
+import re
 
 path = "README.md"
 
@@ -8,15 +9,14 @@ with open(path, "r", encoding="utf-8") as f:
 hour = datetime.datetime.utcnow().hour
 show_a = hour % 2 == 0
 
-version_a = '<img src="https://raw.githubusercontent.com/writedev/writedev/output/snake.svg" alt="Snake animation" />'
-version_b = '''<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph.svg">
-  <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph.svg">
-</picture>'''
+def toggle_block(text, tag, enable):
+    pattern = rf"<!--{tag}\n(.*?)\n{tag}_END-->"
+    def repl(match):
+        return match.group(1) if enable else f"<!--{tag}\n{match.group(1)}\n{tag}_END-->"
+    return re.sub(pattern, repl, text, flags=re.DOTALL)
 
-content = content.replace("VERSION_A_PLACEHOLDER", version_a if show_a else "")
-content = content.replace("VERSION_B_PLACEHOLDER", version_b if not show_a else "")
+content = toggle_block(content, "HOUR_1", show_a)
+content = toggle_block(content, "HOUR_2", not show_a)
 
 with open(path, "w", encoding="utf-8") as f:
     f.write(content)
