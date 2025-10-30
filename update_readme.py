@@ -1,4 +1,5 @@
 import datetime
+from datetime import datetime, timezone, timedelta
 
 # Path to README
 path = "README.md"
@@ -7,8 +8,11 @@ path = "README.md"
 with open(path, "r", encoding="utf-8") as f:
     content = f.read()
 
-# Determine which version to show (alternating every hour)
-hour = datetime.datetime.utcnow().hour
+# Paris time
+paris_offset = timedelta(hours=2)  # UTC+2 (DST)
+now = datetime.now(timezone.utc) + paris_offset
+hour = now.hour
+show_a = hour % 2 == 0
 show_a = hour % 2 == 0  # Even hours -> A, Odd hours -> B
 
 def toggle_section(text, start_tag, end_tag, enable):
