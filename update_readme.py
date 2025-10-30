@@ -1,13 +1,15 @@
 import datetime
 
+# Path to README
 path = "README.md"
 
+# Read the current content
 with open(path, "r", encoding="utf-8") as f:
     content = f.read()
 
-# Determine whether it is day or night
+# Determine which version to show (alternating every hour)
 hour = datetime.datetime.utcnow().hour
-is_day = 6 <= hour < 18  # between 6 a.m. and 6 p.m. UTC
+show_a = hour % 2 == 0  # Even hours -> A, Odd hours -> B
 
 def toggle_section(text, start_tag, end_tag, enable):
     lines = text.split("\n")
@@ -20,7 +22,6 @@ def toggle_section(text, start_tag, end_tag, enable):
             inside = False
             continue
         if inside:
-            # We comment or uncomment
             if enable:
                 lines[i] = lines[i].replace("<!-- ", "").replace(" -->", "")
             else:
@@ -28,8 +29,10 @@ def toggle_section(text, start_tag, end_tag, enable):
                     lines[i] = f"<!-- {line} -->"
     return "\n".join(lines)
 
-new_content = toggle_section(content, "<!--PART1-->", "<!--PART1_END-->", is_day)
-new_content = toggle_section(new_content, "<!--PART2-->", "<!--PART2_END-->", not is_day)
+# Toggle sections
+new_content = toggle_section(content, "<!--HOUR_1-->", "<!--HOUR_1_END-->", show_a)
+new_content = toggle_section(new_content, "<!--HOUR_2-->", "<!--HOUR_2_END-->", not show_a)
 
+# Write back updated README
 with open(path, "w", encoding="utf-8") as f:
     f.write(new_content)
