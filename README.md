@@ -19,9 +19,7 @@
 <br clear="both">
 
 
-<!--HOUR_1
 <img src="https://raw.githubusercontent.com/writedev/writedev/output/snake.svg" alt="Snake animation" />
-HOUR_1_END-->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph-dark.svg">
