@@ -28,8 +28,8 @@ HOUR_1_END-->
 
 <!--HOUR_2-->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/writedev/writedev/refs/heads/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/writedev/writedev/refs/heads/output/github-contribution-grid-snake.svg">
   <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph.svg">
 </picture>
 <!--HOUR_2_END-->
