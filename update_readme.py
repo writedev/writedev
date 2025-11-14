@@ -53,8 +53,7 @@ def toggle_block(text: str, tag: str, enable: bool) -> Tuple[str, bool]:
 
 def main() -> None:
     content = README_PATH.read_text(encoding="utf-8")
-    # hour = dt.datetime.utcnow().hour
-    hour = 1
+    hour = dt.datetime.utcnow().hour
     show_hour_one = hour % 2 == 0
 
     updated, changed_first = toggle_block(content, "HOUR_1", show_hour_one)

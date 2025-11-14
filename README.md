@@ -18,13 +18,14 @@
 
 <br clear="both">
 
-<!--HOUR_1-->
+<!--HOUR_1
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
   <img alt="github-snake" src="github-snake.svg" />
 </picture>
-<!--HOUR_1_END-->
+HOUR_1_END-->
+
 <!--HOUR_2-->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/writedev/writedev/output/pacman-contribution-graph-dark.svg">
